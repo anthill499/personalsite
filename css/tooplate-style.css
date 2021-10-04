@@ -484,9 +484,9 @@ strong {
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
-    bottom: 50px;
   }
 }
+
 @media (max-width: 991px) {
   .full-screen {
     padding-bottom: 4rem;
