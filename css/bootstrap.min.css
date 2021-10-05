@@ -9203,6 +9203,7 @@ a.text-dark:hover {
   }
   .container {
     min-width: 992px !important;
+    margin: auto;
   }
   .navbar {
     display: none;
