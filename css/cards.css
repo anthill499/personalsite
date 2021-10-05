@@ -6,6 +6,11 @@
   display: flex;
   justify-content: center;
 }
+
+.card:hover .title {
+  font-size: 40px;
+  transition: 0.4s ease-in;
+}
 .cards-container {
   position: relative;
   top: 60px;
@@ -15,7 +20,7 @@
   margin-bottom: 100px;
 }
 .icon-container {
-  margin-top: 120px;
+  margin-top: 100px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +60,7 @@
 
 .title {
   color: black;
-  font-weight: 300;
+  font-weight: 700;
   position: absolute;
   left: 20px;
   top: 15px;
