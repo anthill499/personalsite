@@ -212,6 +212,9 @@ label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+label:hover {
+  cursor: pointer;
+}
 button {
   border-radius: 0;
 }
