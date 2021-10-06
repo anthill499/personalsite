@@ -194,6 +194,9 @@ strong {
     opacity: 0;
   }
 }
+.social-icons a:hover {
+  filter: invert(70%);
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -351,7 +354,11 @@ strong {
 .dark-mode .owl-carousel button.owl-dot {
   color: #ffffff;
 }
-
+.dark-mode .social-icons img,
+.dark-mode .about-text ul,
+.dark-mode .card {
+  filter: invert(1);
+}
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
