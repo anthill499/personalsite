@@ -7,10 +7,6 @@
   justify-content: center;
 }
 
-.card:hover .title {
-  font-size: 40px;
-  transition: 0.4s ease-in;
-}
 .cards-container {
   position: relative;
   top: 60px;
