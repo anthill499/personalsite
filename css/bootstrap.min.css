@@ -212,6 +212,9 @@ label {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
+label:hover {
+  cursor: pointer;
+}
 button {
   border-radius: 0;
 }
@@ -553,6 +556,8 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  /* display: flex; */
+  justify-content: center;
 }
 .no-gutters {
   margin-right: 0;
@@ -1184,11 +1189,12 @@ pre code {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
+    margin: auto;
   }
   .col-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
   .col-lg-7 {
     -ms-flex: 0 0 58.333333%;
@@ -9203,6 +9209,7 @@ a.text-dark:hover {
   }
   .container {
     min-width: 992px !important;
+    margin: auto;
   }
   .navbar {
     display: none;
