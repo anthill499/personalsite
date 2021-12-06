@@ -1,0 +1,28 @@
+$bg: #f7f7f7;
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.about {
+  background-color: $bg;
+}
+
+.technologies {
+  background-color: $bg;
+}
+
+.projects {
+  background-color: $bg;
+}
+
+.contact {
+  background-color: $bg;
+}
