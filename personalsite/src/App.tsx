@@ -1,14 +1,30 @@
 import styles from "./App.module.scss";
 import About from "./about";
+import { useState } from "react";
+import ButtonPage from "./buttonPage";
 function App() {
+  const [clicked, setClicked] = useState(false);
+
+  const renderButtonPage = () => {
+    return <ButtonPage clicked={clicked} />;
+  };
+
+  const renderSiteSections = () => {
+    return (
+      <>
+        <section className={styles.about}>
+          <About />
+        </section>
+        <section className={styles.technologies}>Technologies</section>
+        <section className={styles.projects}>Projects</section>
+        <section className={styles.contact}>Contact</section>
+      </>
+    );
+  };
+
   return (
     <div className={styles.App}>
-      <section className={styles.about}>
-        <About />
-      </section>
-      <section className={styles.technologies}>Technologies</section>
-      <section className={styles.projects}>Projects</section>
-      <section className={styles.contact}>Contact</section>
+      {clicked ? renderSiteSections() : renderButtonPage()}
     </div>
   );
 }
