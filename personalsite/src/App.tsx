@@ -6,7 +6,11 @@ function App() {
   const [clicked, setClicked] = useState(false);
 
   const renderButtonPage = () => {
-    return <ButtonPage clicked={clicked} />;
+    return (
+      <>
+        <ButtonPage clicked={clicked} handleClick={setClicked} />
+      </>
+    );
   };
 
   const renderSiteSections = () => {

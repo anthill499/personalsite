@@ -6,16 +6,81 @@
   align-items: center;
   flex-direction: column;
   gap: 40px;
+  font-family: "Kadwa", serif;
 }
 
 .title {
   font-size: 2rem;
 }
 
+.description {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+  animation-direction: alternate;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .enterButton {
   background-color: white;
-  border: 1px solid rgb(206, 206, 206);
-  padding: 75px;
+  padding: 60px;
   border-radius: 20px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  border: none;
+  box-shadow: 4.5px 4.5px 4.5px 2px rgba(0, 0, 0, 0.2);
 }
+
+.enterButton:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.enterButton:active {
+  background-color: white;
+  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+// @for $i from 1 through 3 {
+//     .description:nth-child(#{$i}) {
+//         color: blue
+//     }
+// }
