@@ -1,0 +1,20 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 58px;
+  height: 6vh;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.navBarOptions {
+  display: flex;
+  gap: 7%;
+  li {
+    cursor: pointer;
+    &:hover {
+      transition: 0.1s ease-in;
+      transform: translate(0%, -15%);
+    }
+  }
+}

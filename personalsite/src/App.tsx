@@ -2,6 +2,7 @@ import styles from "./App.module.scss";
 import About from "./about";
 import { useState } from "react";
 import ButtonPage from "./buttonPage";
+import Navbar from "./Navbar";
 function App() {
   const [clicked, setClicked] = useState(false);
 
@@ -16,6 +17,7 @@ function App() {
   const renderSiteSections = () => {
     return (
       <>
+        <Navbar />
         <section className={styles.about}>
           <About />
         </section>

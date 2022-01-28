@@ -11,14 +11,29 @@
 
 .title {
   font-size: 2rem;
+  -webkit-animation: titlefade 1s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: titlefade 1s; /* Firefox < 16 */
+  -ms-animation: titlefade 1s; /* Internet Explorer */
+  -o-animation: titlefade 1s; /* Opera < 12.1 */
+  animation: titlefade 1s;
+}
+
+@keyframes titlefade {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .description {
-  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 11.1 */
-  -moz-animation: fadein 1.5s; /* Firefox < 16 */
-  -ms-animation: fadein 1.5s; /* Internet Explorer */
-  -o-animation: fadein 1.5s; /* Opera < 12.1 */
-  animation: fadein 1.5s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
   animation-direction: alternate;
 }
 
@@ -68,6 +83,21 @@
   font-size: 1.6rem;
   border: none;
   box-shadow: 4.5px 4.5px 4.5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-animation: initialfade 1s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: initialfade 1s; /* Firefox < 16 */
+  -ms-animation: initialfade 1s; /* Internet Explorer */
+  -o-animation: initialfade 1s; /* Opera < 12.1 */
+  animation: initialfade 1s;
+}
+
+@keyframes initialfade {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .enterButton:hover {
@@ -79,8 +109,18 @@
   box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
-// @for $i from 1 through 3 {
-//     .description:nth-child(#{$i}) {
-//         color: blue
-//     }
-// }
+.nameTitle::after {
+  background-color: black;
+}
+
+.swe {
+  color: #a10000;
+}
+
+.mp {
+  color: #0019a7;
+}
+
+.ge {
+  color: #21a700;
+}
