@@ -14,7 +14,8 @@
     cursor: pointer;
     &:hover {
       transition: 0.1s ease-in;
-      transform: translate(0%, -15%);
+      transform: translate(0%, -15%) rotate(2.5deg);
+      color: #a10000;
     }
   }
 }

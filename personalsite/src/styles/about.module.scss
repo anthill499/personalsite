@@ -1,0 +1,61 @@
+h1 {
+  font-size: 2rem;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  background-color: white;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 40%;
+  -webkit-animation: initialfade 1s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: initialfade 1s; /* Firefox < 16 */
+  -ms-animation: initialfade 1s; /* Internet Explorer */
+  -o-animation: initialfade 1s; /* Opera < 12.1 */
+  animation: initialfade 1s;
+}
+
+@keyframes initialfade {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.spanTitle {
+  -webkit-animation: spanfade 2s; /* Safari, Chrome and Opera > 11.1 */
+  -moz-animation: spanfade 2s; /* Firefox < 16 */
+  -ms-animation: spanfade 2s; /* Internet Explorer */
+  -o-animation: spanfade 2s; /* Opera < 12.1 */
+  animation: spanfade 2s;
+}
+
+@keyframes spanfade {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.swe {
+  color: #a10000;
+}
+
+.mp {
+  color: #0019a7;
+}
+
+.ge {
+  color: #21a700;
+}
